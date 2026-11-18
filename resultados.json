@@ -1,0 +1,180 @@
+{
+  "split": {
+    "treino": 12894,
+    "teste": 3224,
+    "bom_treino": 0.3397704358616411,
+    "bom_teste": 0.3396401985111663
+  },
+  "cv": {
+    "Baseline (classe majoritária)": {
+      "accuracy": [
+        0.6602295619780341,
+        0.0001508183039537166
+      ],
+      "precision": [
+        0.0,
+        0.0
+      ],
+      "recall": [
+        0.0,
+        0.0
+      ],
+      "f1": [
+        0.0,
+        0.0
+      ],
+      "roc_auc": [
+        0.5,
+        0.0
+      ]
+    },
+    "MLP": {
+      "accuracy": [
+        0.6990084922349791,
+        0.010522049344371592
+      ],
+      "precision": [
+        0.5894434793285759,
+        0.030186310004378714
+      ],
+      "recall": [
+        0.38302301848872505,
+        0.027794407382920373
+      ],
+      "f1": [
+        0.46330889209568166,
+        0.02004200244402148
+      ],
+      "roc_auc": [
+        0.725717848088646,
+        0.012273781129997621
+      ]
+    },
+    "Gradient Boosting": {
+      "accuracy": [
+        0.6709323169082742,
+        0.00897519747120368
+      ],
+      "precision": [
+        0.5117397956066089,
+        0.009905812874238144
+      ],
+      "recall": [
+        0.6804340242524589,
+        0.02395468635044859
+      ],
+      "f1": [
+        0.5840867022954055,
+        0.014722354563509163
+      ],
+      "roc_auc": [
+        0.7397252456161548,
+        0.015049032033793567
+      ]
+    }
+  },
+  "test": {
+    "Baseline (classe majoritária)": {
+      "accuracy": 0.6603598014888338,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.5,
+      "cm": [
+        [
+          2129,
+          0
+        ],
+        [
+          1095,
+          0
+        ]
+      ]
+    },
+    "MLP": {
+      "accuracy": 0.6954094292803971,
+      "precision": 0.5710691823899371,
+      "recall": 0.4146118721461187,
+      "f1": 0.4804232804232804,
+      "roc_auc": 0.7136512307748403,
+      "cm": [
+        [
+          1788,
+          341
+        ],
+        [
+          641,
+          454
+        ]
+      ]
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.6668734491315137,
+      "precision": 0.507256392536282,
+      "recall": 0.6703196347031963,
+      "f1": 0.5774980330448466,
+      "roc_auc": 0.7296653519241781,
+      "cm": [
+        [
+          1416,
+          713
+        ],
+        [
+          361,
+          734
+        ]
+      ]
+    }
+  },
+  "n_features": 3080,
+  "perm": {
+    "MLP": {
+      "Log_Vote_Count": 0.0462,
+      "Release_Year": 0.042,
+      "Overview (sinopse)": 0.0341,
+      "Lang": 0.0221,
+      "Genre (texto)": 0.0132,
+      "Era": 0.0111,
+      "Popularity_Tier": 0.0101,
+      "MPAA": 0.0058,
+      "Log_Popularity": 0.0053,
+      "Has_Budget": 0.005,
+      "Animation_Style": 0.0031,
+      "Has_Box_Office": 0.0029,
+      "Target_Audience": 0.0016,
+      "Movie_Length_Minutes": 0.0015,
+      "Is_Adult_Content": 0.0006,
+      "Is_Future_Release": 0.0002,
+      "Is_TV_Compilation": 0.0002,
+      "Remake": 0.0002,
+      "Has_Collection": 0.0
+    },
+    "Gradient Boosting": {
+      "Release_Year": 0.089,
+      "Log_Vote_Count": 0.077,
+      "Overview (sinopse)": 0.0155,
+      "Movie_Length_Minutes": 0.0132,
+      "Genre (texto)": 0.0122,
+      "Lang": 0.009,
+      "Log_Popularity": 0.0031,
+      "MPAA": 0.0016,
+      "Animation_Style": 0.0011,
+      "Era": 0.0007,
+      "Popularity_Tier": 0.0004,
+      "Has_Box_Office": 0.0002,
+      "Target_Audience": 0.0002,
+      "Has_Budget": 0.0,
+      "Is_Future_Release": 0.0,
+      "Has_Collection": 0.0,
+      "Is_Adult_Content": 0.0,
+      "Is_TV_Compilation": 0.0,
+      "Remake": 0.0
+    }
+  },
+  "ap": {
+    "MLP": 0.5830346213599142,
+    "Gradient Boosting": 0.5976579257559536
+  },
+  "mlp_iters": 12,
+  "gb_iters": 176
+}
